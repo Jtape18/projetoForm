@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 :root{
     --brand-light:#F67841;
@@ -28,4 +29,8 @@
     --h4:bold 1rem/120% var(--font-family);
     --text:400 1rem/1.5 var(--font-family);
     --text-sm:400 .875/1.4 var(--font-family);
+}
+body{
+    /* para tirar rolagem de toda a pagina  */
+    overflow: hidden;
 }

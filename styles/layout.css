@@ -1,0 +1,25 @@
+#app{
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+
+    height: 100vh;
+    /* sempre vai ficar sem rolagem, tudo fixo  */
+    overflow: hidden;
+}
+main{
+    /* colocar a rolagem apenas no main, pois esta especificando */
+    overflow: auto;
+    /* padding que existe em cima e nas laterais */
+    padding: 4rem;
+    & .main-container{
+        max-width: 33rem;
+        margin-left: auto;
+    }
+}
+aside{
+    padding: 4rem;
+    background-color: var(--surface-secondary);
+    & .aside-container{
+        max-width: 31rem;
+    }
+}
