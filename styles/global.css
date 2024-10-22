@@ -20,4 +20,12 @@
     --stroke-highlight:#F3541C;
 
     --semantic:#DC2626;
+    --font-family: "Poppins", sans-serif;
+
+    --h1:bold 2rem/120% var(--font-family);
+    --h2:bold 1.5rem/120% var(--font-family);
+    --h3:bold 1.25rem/120% var(--font-family);
+    --h4:bold 1rem/120% var(--font-family);
+    --text:400 1rem/1.5 var(--font-family);
+    --text-sm:400 .875/1.4 var(--font-family);
 }
