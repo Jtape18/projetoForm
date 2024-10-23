@@ -1,0 +1,16 @@
+@import url(fields/index.css);
+
+form{
+    /* espacamento em cima do formuluario */
+    margin-top: 3rem;
+}
+fieldset{
+    /* tirar borda fielset padrao */
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+}
+legend{
+    font: var(--h4);
+    margin-bottom: 1.5rem;
+}

@@ -24,7 +24,8 @@
             <!-- fielset sempre dentro de um form  -->
             <form method="post" enctype="multipart/form-data">
                 <fieldset class="child-info">
-                    <legend>Informação da criança</legend>
+                    <legend>Informação da criança</legend> 
+
                     <div class="input-wrapper">
                         <label for="fullname">Nome completo</label>
                         <input type="text" id="fullname"  name="fullname" placeholder="Qual é o nome da criança">
@@ -32,7 +33,7 @@
 
                     <div class="input-wrapper">
                         <label for="date">Data de nascimento</label>
-                        <input id="date" name="date" type="date">
+                        <input id="date" name="date" type="date" lang="pt-BR">
                     </div>
                     <div class="select-wrapper">
                         <label for="sexo">Sexo</label>
@@ -41,18 +42,18 @@
                             <option value="famale">Feminino</option>
                             <option value="na">outro</option>
                         </select>
-                        <div class="textare-wrapper">
-                            <label for="medicalinfo">Informações médicas</label>
-                            <textarea name="medicalinfo" id="medicalinfo" placeholder="Coloque Informações médicas da criança" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="droparea-wrapper">
-                            <!-- colocar enctype em forms -->
-                            <label for="drop">Certidão de nascimento</label>
-                            <input type="file" name="drop" id="drop">
-                            <img src="assets/icons/cloud-upload.svg" alt="">
-                            <p>Clique aqui para <br> selecionar arquivos</p>
+                    </div>
+                    <div class="textare-wrapper">
+                        <label for="medicalinfo">Informações médicas <br></label>
+                        <textarea name="medicalinfo" id="medicalinfo" placeholder="Coloque Informações médicas da criança" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="droparea-wrapper">
+                        <!-- colocar enctype em forms -->
+                        <label for="drop">Certidão de nascimento</label>
+                        <input type="file" name="drop" id="drop">
+                        <img src="assets/icons/cloud-upload.svg" alt="">
+                        <p>Clique aqui para <br> selecionar arquivos</p>
 
-                        </div>
                     </div>
                 </fieldset>
             </form>
