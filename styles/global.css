@@ -34,3 +34,6 @@ body{
     /* para tirar rolagem de toda a pagina  */
     overflow: hidden;
 }
+.container{
+    margin-left: auto;
+}
