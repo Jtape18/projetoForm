@@ -1,3 +1,5 @@
+@import url(dropzone.css);
+
 input, textarea, select{
     /* tira setinha das caixas */
     appearance: none;
