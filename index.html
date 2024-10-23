@@ -59,6 +59,31 @@
     
                         </div>
                     </fieldset>
+                    <fieldset class="local-info">
+                        <legend>Endereço residencial</legend>
+                        <div class="input-wrapper CEP">
+                            <label for="cep">Cep</label>
+                                <input type="text" id="cep" name="cep" pattern="\d{5}-?\d{3}" maxlength="9" placeholder="12345-678" required>
+                        </div>
+                        <div class="input-wrapper RUA">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" name="rua" placeholder="Rua das Flores" required>
+                        </div>
+                        <div class="input-wrapper NUMERO">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="123" required>
+                        </div>
+                        <div class="input-wrapper CIDADE">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade"  placeholder="São Paulo" required>
+                        </div>
+                        <div class="number-wrapper ESTADO">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado" pattern="AC|AL|AP|AM|BA|CE|DF|ES|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RJ|RN|RS|RO|RR|SC|SP|SE|TO" maxlength="2" placeholder="UF" required>
+                        </div>
+
+
+                    </fieldset>
                 </form>
             </div>
             

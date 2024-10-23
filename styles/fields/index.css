@@ -44,3 +44,33 @@ select{
     no-repeat calc(100% - 1rem);
     
 }
+
+.local-info legend{
+    padding-top: 3rem;
+}
+.local-info{
+    display: grid;
+    
+    grid-template-areas: 
+    "CEP CEP"
+    "RUA NUMERO"
+    "CIDADE ESTADO";
+    grid-column: 61.71% 38,29%;
+    grid-row: 
+    1fr 1fr;
+}
+.CEP{
+    grid-area: CEP;
+}
+.RUA{
+    grid-area: RUA;
+}
+.NUMERO{
+    grid-area: NUMERO;
+}
+.CIDADE{
+    grid-area: CIDADE;
+}
+.ESTADO{
+    grid-area: ESTADO;
+}
