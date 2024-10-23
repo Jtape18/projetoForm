@@ -21,7 +21,41 @@
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
             </div>
-            
+            <!-- fielset sempre dentro de um form  -->
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+                    <legend>Informação da criança</legend>
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input type="text" id="fullname"  name="fullname" placeholder="Qual é o nome da criança">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="date">Data de nascimento</label>
+                        <input id="date" name="date" type="date">
+                    </div>
+                    <div class="select-wrapper">
+                        <label for="sexo">Sexo</label>
+                        <select name="Sexo" id="sexo">
+                            <option value="male">Masculino</option>
+                            <option value="famale">Feminino</option>
+                            <option value="na">outro</option>
+                        </select>
+                        <div class="textare-wrapper">
+                            <label for="medicalinfo">Informações médicas</label>
+                            <textarea name="medicalinfo" id="medicalinfo" placeholder="Coloque Informações médicas da criança" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="droparea-wrapper">
+                            <!-- colocar enctype em forms -->
+                            <label for="drop">Certidão de nascimento</label>
+                            <input type="file" name="drop" id="drop">
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para <br> selecionar arquivos</p>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         </main>
         <aside>
             <div class="aside-container">
