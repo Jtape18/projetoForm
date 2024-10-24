@@ -44,6 +44,13 @@ select{
     no-repeat calc(100% - 1rem);
     
 }
+/* tirar a seta do numero  */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 .local-info legend{
     padding-top: 3rem;
@@ -73,4 +80,13 @@ select{
 }
 .ESTADO{
     grid-area: ESTADO;
+}
+
+.adress legend{
+    padding-top: 3rem;
+}
+.adress p{
+    font: var(--text-sm);
+    color: #78716C;
+    padding-top: .25rem;
 }
