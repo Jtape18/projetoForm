@@ -37,3 +37,10 @@ body{
 .container{
     margin-left: auto;
 }
+.flex{
+    display: flex;
+    
+}
+.flex div:first-child{
+    width: 30rem;
+}

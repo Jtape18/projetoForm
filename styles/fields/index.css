@@ -44,3 +44,17 @@ select{
     no-repeat calc(100% - 1rem);
     
 }
+.address .flex{
+    gap: 1.25rem;
+}
+.input-wrapper:has[disabled]{
+
+    opacity: .5;
+
+}
+/* todo input que for desabilitado ele fica com essa cor  */
+input{
+    &[disabled]{
+        background-color: var(--surface-disabled);
+    }
+}
