@@ -44,6 +44,9 @@ select{
     no-repeat calc(100% - 1rem);
     
 }
+.address{
+    margin-top: 3rem;
+}
 .address .flex{
     gap: 1.25rem;
 }
@@ -57,4 +60,32 @@ input{
     &[disabled]{
         background-color: var(--surface-disabled);
     }
+    &:invalid{
+        border: 0.125rem solid var(--semantic);
+        
+    }
+    & + small{
+            font: var(--text-sm);
+            color: #78716C;
+            display: inline-block;
+            margin-top: .25rem;
+    }
+    /* para a msg de erro no email  */
+    &[required] + .error{
+        display: flex;
+        align-items: center;
+        font: var(--text-sm);
+        color: var(--semantic);
+        margin-top: .25rem;
+        gap: .25rem;
+
+    }
+    &:not(:focus):valid + .error{
+        display: none;
+    }
 }
+.guardian{
+    margin-top: 3rem;
+
+}
+
